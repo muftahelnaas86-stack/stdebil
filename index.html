@@ -1,73 +1,38 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>التسجيل - بطولة سترايكر درنة للبلياردو</title>
-  <style>
-    body { 
-      font-family: 'Tahoma', sans-serif; 
-      background:#0d0d0d url('https://i.ibb.co/5L8L1LJ/billiard-bg.jpg') no-repeat center center fixed; 
-      background-size: cover;
-      color:#fff; 
-      margin:0; 
-      display:flex; 
-      justify-content:center; 
-      align-items:center; 
-      height:100vh; 
-    }
-    .form-box { 
-      background:rgba(0,0,0,0.8); 
-      padding:30px; 
-      border-radius:20px; 
-      width:400px; 
-      box-shadow:0 0 30px rgba(0,0,0,0.7); 
-    }
-    h2 { 
-      text-align:center; 
-      color:#ce145f; 
-      margin-bottom:20px; 
-    }
-    input, select { 
-      width:100%; 
-      padding:12px; 
-      margin:10px 0; 
-      border:none; 
-      border-radius:10px; 
-      font-size:14px; 
-    }
-    button { 
-      width:100%; 
-      padding:14px; 
-      background:#ce145f; 
-      border:none; 
-      border-radius:12px; 
-      color:#fff; 
-      font-size:16px; 
-      cursor:pointer; 
-    }
-    button:hover { background:#a6104c; }
-  </style>
+<meta charset="UTF-8">
+<title>تسجيل - بطولة سترايكر درنة للبلياردو</title>
+<style>
+  body { font-family: Tahoma, sans-serif; background:#0d0d0d; color:#fff; display:flex; justify-content:center; align-items:center; height:100vh; }
+  .form-box { background:rgba(0,0,0,0.8); padding:30px; border-radius:20px; width:400px; box-shadow:0 0 30px rgba(0,0,0,0.7);}
+  h2 { text-align:center; color:#ce145f; margin-bottom:20px;}
+  input, select { width:100%; padding:12px; margin:10px 0; border:none; border-radius:10px; font-size:14px;}
+  button { width:100%; padding:14px; background:#ce145f; border:none; border-radius:12px; color:#fff; font-size:16px; cursor:pointer;}
+  button:hover { background:#a6104c;}
+</style>
 </head>
 <body>
-  <div class="form-box">
-    <h2>🏆 بطولة سترايكر درنة للبلياردو</h2>
-    <form action="https://formsubmit.co/meroandyou25@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="الاسم الكامل" required>
-      <input type="number" name="age" placeholder="العمر" required>
-      <input type="text" name="phone" placeholder="رقم الهاتف / واتساب" required>
-      <select name="category" required>
-        <option value="">اختر الفئة</option>
-        <option value="pro">محترف</option>
-        <option value="amateur">هاوي</option>
-      </select>
+<div class="form-box">
+  <h2>🏆 بطولة سترايكر درنة للبلياردو</h2>
+  <form action="https://formsubmit.co/meroandyou25@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="الاسم الكامل" required>
+    <input type="number" name="age" placeholder="العمر" required>
+    <input type="text" name="phone" placeholder="رقم الهاتف / واتساب" required>
+    <input type="text" name="city" placeholder="المدينة" required>
+    <select name="category" required>
+      <option value="">اختر الفئة</option>
+      <option value="pro">محترف</option>
+      <option value="amateur">هاوي</option>
+    </select>
 
-      <!-- إعدادات إضافية -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_subject" value="تسجيل جديد في بطولة سترايكر درنة">
-      
-      <button type="submit">✅ تسجيل</button>
-    </form>
-  </div>
+    <!-- إعدادات Formsubmit إضافية -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="تسجيل جديد في بطولة سترايكر درنة">
+
+    <button type="submit">✅ تسجيل</button>
+  </form>
+</div>
 </body>
 </html>
